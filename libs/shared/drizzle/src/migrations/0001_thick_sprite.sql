@@ -1,0 +1,1 @@
+ALTER TABLE "advertisers" ALTER COLUMN "clerk_organization_id" SET DATA TYPE text;

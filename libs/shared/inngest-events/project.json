@@ -1,0 +1,23 @@
+{
+  "name": "inngest-events",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/inngest-events/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/inngest-events/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/shared/inngest-events"],
+      "options": {
+        "jestConfig": "libs/shared/inngest-events/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}

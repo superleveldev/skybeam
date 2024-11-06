@@ -1,0 +1,1 @@
+ALTER TABLE "stripe_invoices" ADD COLUMN "campaign_id" uuid;

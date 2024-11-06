@@ -1,0 +1,7 @@
+{
+  "no-discovery": true,
+  "urls": [
+    "http://localhost:3001/api/inngest",
+    "http://localhost:3002/api/inngest"
+  ]
+}

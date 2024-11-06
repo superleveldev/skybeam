@@ -1,0 +1,1 @@
+ALTER TABLE "campaigns" ADD COLUMN "timezone" jsonb DEFAULT '{"value":"Etc/GMT","label":"(GMT+0:00) UTC","offset":0,"abbrev":"GMT","altName":"British Standard Time"}'::jsonb NOT NULL;

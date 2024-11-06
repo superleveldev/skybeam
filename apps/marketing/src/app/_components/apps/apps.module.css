@@ -1,0 +1,127 @@
+.appsContainer {
+  background: linear-gradient(178deg, #0067ff 49.29%, #0a0a0a 173.81%);
+}
+
+.appsTitle {
+  color: #fff;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 95%;
+  letter-spacing: -1.6px;
+}
+
+.appsLogoContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.appsLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  max-width: 240px;
+  max-height: 124px;
+}
+
+.appsRoku {
+  background: linear-gradient(239deg, #1a102b 6.48%, #7851bf 111.72%);
+}
+
+.appsParamount {
+  background: linear-gradient(256deg, #0064ff -4.14%, #003c99 129.18%);
+}
+
+.appsDiscovery {
+  background: radial-gradient(
+    1418.65% 219.87% at 139.51% -24.8%,
+    #6ed1fc 0%,
+    #edbffd 100%
+  );
+}
+
+.appsSling {
+  background: linear-gradient(255deg, #0234b2 2.12%, #021c72 97.96%);
+}
+
+.appsMax {
+  background: radial-gradient(50% 50% at 50% 50%, #012be7 0%, #001fc8 100%);
+}
+
+.appsHulu {
+  background: linear-gradient(238deg, #1ce783 2.12%, #08c668 66.88%);
+}
+
+@media (max-width: 1439px) {
+  .appsContainer {
+    padding-top: 92px;
+    padding-left: 40px;
+    padding-right: 40px;
+    row-gap: 62px;
+  }
+
+  .appsLogoContainer {
+    padding: 24px;
+    gap: 20px;
+    max-width: 880px;
+  }
+
+  .appsLogo {
+    min-width: 187px;
+    min-height: 96px;
+  }
+
+  .appsRoku {
+    padding: 28px;
+  }
+
+  .appsDiscovery {
+    padding: 32px 18px 32px 11px;
+  }
+
+  .appsPeacock {
+    padding: 24px;
+  }
+}
+@media (max-width: 959px) {
+  .appsContainer {
+    padding-top: 44px;
+    row-gap: 44px;
+  }
+
+  .appsTitle {
+    font-size: 50px;
+    letter-spacing: -0.5px;
+  }
+
+  .appsLogoContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 567px) {
+  .appsContainer {
+    padding: 40px 16px 0;
+    row-gap: 32px;
+  }
+
+  .appsTitle {
+    font-size: 32px;
+    letter-spacing: -0.32px;
+  }
+
+  .appsLogoContainer {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 24px 14px;
+    max-width: 288px;
+  }
+
+  .appsLogo {
+    min-width: 243px;
+    min-height: 125px;
+  }
+}

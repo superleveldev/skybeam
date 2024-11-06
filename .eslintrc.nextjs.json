@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "./.eslintrc.typescript.json"
+  ],
+  "ignorePatterns": ["!**/*", "/public/**"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.mjs", "*.jsx", "*.mdx"],
+      "rules": {
+        "@next/next/no-html-link-for-pages": "off",
+        "@next/next/no-img-element": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "react/jsx-filename-extension": [
+          "error",
+          { "extensions": [".jsx", ".tsx"] }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "jsx-a11y/alt-text": "off"
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ],
+  "env": {
+    "jest": true
+  }
+}

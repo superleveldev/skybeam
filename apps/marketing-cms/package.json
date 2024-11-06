@@ -1,0 +1,32 @@
+{
+  "name": "marketing-cms",
+  "private": true,
+  "version": "1.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy",
+    "predev": "pnpm run typegen",
+    "typegen": "sanity schema extract --path=./extract.json && sanity typegen generate"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^4.0.0",
+    "prettier": "^3.0.2"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "root": true,
+  "ignorePatterns": ["!**/*"],
+  "plugins": ["@nx"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:eslint-comments/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.mjs", "*.jsx", "*.mdx"],
+      "rules": {
+        "@nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": ["@mobile/**"],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": ["*"]
+              }
+            ]
+          }
+        ],
+        "no-debugger": "off",
+        "no-underscore-dangle": "off",
+        "no-undef": "off",
+        "no-param-reassign": "off",
+        "no-unused-expressions": "error",
+        "no-console": "off",
+        "no-shadow": "off",
+        "lines-between-class-members": "off",
+        "class-methods-use-this": "off",
+        "no-prototype-builtins": "off",
+        "import/no-extraneous-dependencies": "off",
+        "import/prefer-default-export": "off",
+        "import/no-default-export": "off",
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            "js": "never",
+            "jsx": "never",
+            "ts": "never",
+            "tsx": "never"
+          }
+        ],
+        "no-nested-ternary": "off",
+        "prefer-promise-reject-errors": "off",
+        "radix": "off",
+        "no-plusplus": "off",
+        "no-new": "off",
+        "consistent-return": "off",
+        "no-useless-concat": "off",
+        "no-return-assign": "off",
+        "no-await-in-loop": "off",
+        "prefer-destructuring": "off",
+        "max-classes-per-file": "off",
+        "no-restricted-globals": "off",
+        "global-require": "off",
+        "jsx-a11y/alt-text": "off",
+        "import/no-dynamic-require": "off",
+        "eslint-comments/disable-enable-pair": "off",
+        "import/no-unresolved": "off",
+        "import/no-cycle": "off",
+        "import/no-anonymous-default-export": "off",
+        "import/no-named-as-default-member": "off",
+        "promise/always-return": "off",
+        "promise/no-return-wrap": "off",
+        "promise/no-nesting": "off",
+        "promise/catch-or-return": "off",
+        "prettier/prettier": "error",
+        "quotes": [
+          "error",
+          "single",
+          {
+            "allowTemplateLiterals": true,
+            "avoidEscape": true
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx", "*.mdx"],
+      "extends": [
+        "plugin:import/typescript",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@nx/typescript"
+      ],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-loss-of-precision": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          { "varsIgnorePattern": "React|T|context" }
+        ]
+      }
+    },
+    {
+      "files": "*.json",
+      "parser": "jsonc-eslint-parser",
+      "rules": {}
+    }
+  ],
+  "globals": {
+    "Proxy": "readonly",
+    "Promise": "readonly"
+  }
+}

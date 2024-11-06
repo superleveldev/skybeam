@@ -1,0 +1,29 @@
+{
+  "plugins": ["react"],
+  "extends": [
+    "plugin:@nrwl/nx/react-typescript"
+  ],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.mjs", "*.jsx", "*.mdx"],
+      "rules": {
+        "react/no-render-return-value": "off",
+        "react/prop-types": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "react/no-unescaped-entities": ["error", {"forbid": [">", "}"]}]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ],
+  "env": {
+    "jest": true
+  }
+}

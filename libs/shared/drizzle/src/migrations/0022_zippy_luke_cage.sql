@@ -1,0 +1,1 @@
+ALTER TYPE "http_method" ADD VALUE 'PATCH';

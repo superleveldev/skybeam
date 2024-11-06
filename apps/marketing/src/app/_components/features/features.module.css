@@ -1,0 +1,184 @@
+.featuresTitle {
+  font-size: 80px;
+  line-height: 95%;
+  letter-spacing: -1.6px;
+  font-weight: 300;
+  color: #00152a;
+  text-align: center;
+  padding: 0 32px;
+  max-width: 71rem;
+  width: 100%;
+}
+
+.featuresCardTitle {
+  color: #00152a;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 95%;
+  letter-spacing: -0.8px;
+}
+
+.featuresCardSubtitle {
+  color: #00152a;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.featuresCardIcon {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #fefefd;
+  border: 1px solid #e5e8d6;
+}
+
+.featuresCardIcon path {
+  stroke: #959881;
+}
+
+.featuresCardImage img {
+  box-shadow: 0px 32px 64px -12px rgba(64, 56, 0, 0.15);
+  border-radius: 12px;
+}
+
+@media (max-width: 1439px) {
+  .featuresContainer {
+    padding: 96px 40px;
+  }
+
+  .featuresTitle {
+    padding: 0 32px;
+    max-width: 772px;
+  }
+
+  .featureCardsContainer {
+    max-width: 880px;
+  }
+
+  .featuresCardContainer {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  .featuresCard {
+    width: 100%;
+    padding: 0;
+  }
+
+  .featuresCard:nth-child(odd) {
+    flex-direction: row;
+  }
+  .featuresCard:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .featuresCardContent,
+  .featuresCardImage {
+    width: 100%;
+  }
+
+  .featuresCardContent {
+    padding: 40px;
+    align-items: baseline;
+  }
+
+  .featuresCardImage {
+    padding: 38px 28px;
+  }
+
+  .featuresCardImage img {
+    box-shadow: 0px 32.561px 65.123px -12.211px rgba(64, 56, 0, 0.15);
+  }
+
+  .featuresCardSubtitle {
+    margin-top: -8px;
+  }
+}
+
+@media (max-width: 959px) {
+  .featuresContainer {
+    padding: 64px 24px 114px;
+  }
+
+  .featuresTitle {
+    font-size: 50px;
+    letter-spacing: -0.5px;
+    max-width: 520px;
+  }
+
+  .featureCardsContainer {
+    max-width: 520px;
+  }
+
+  .featuresCard {
+    flex-direction: column-reverse !important;
+    row-gap: 0;
+  }
+
+  .featuresCardImage {
+    padding: 40px 40px 0;
+  }
+
+  .featuresCardImage img {
+    box-shadow: 0px 32px 64px -12px rgba(64, 56, 0, 0.15);
+  }
+
+  .featuresCardContent {
+    margin-top: -14px;
+    background-color: #faf9f6;
+    flex-direction: row;
+    column-gap: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    align-items: normal;
+  }
+
+  .featuresCardTitle {
+    font-size: 32px;
+    letter-spacing: -0.32px;
+  }
+
+  .featuresCardSubtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 567px) {
+  .featuresContainer {
+    padding: 64px 16px 72px;
+    row-gap: 24px;
+  }
+
+  .featuresTitle {
+    font-size: 32px;
+    letter-spacing: -0.32px;
+    padding: 0;
+  }
+
+  .featuresCardImage {
+    padding: 24px 20px;
+  }
+
+  .featuresCardImage img {
+    box-shadow: none;
+  }
+
+  .featuresCardContent {
+    padding: 16px;
+    margin-top: 0;
+  }
+
+  .featuresCardContent > div {
+    row-gap: 8px;
+  }
+
+  .featuresCardTitle {
+    font-size: 25px;
+    letter-spacing: -0.25px;
+  }
+
+  .featuresCardSubtitle {
+    margin-top: 0;
+  }
+}

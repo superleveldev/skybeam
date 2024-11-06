@@ -1,0 +1,133 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "tasksRunnerOptions": {
+    "default": {
+      "options": {
+        "runtimeCacheInputs": [
+          "node -v",
+          "echo $NODE_ENV",
+          "echo $VERCEL_ENV",
+          "echo $GHA_ENVIRONMENT"
+        ]
+      }
+    }
+  },
+  "namedInputs": {
+    "sharedGlobals": [
+      "{workspaceRoot}/tailwind-workspace-preset.js",
+      "{workspaceRoot}/.babelrc",
+      "{workspaceRoot}/babel.config.json"
+    ],
+    "configs": ["{projectRoot}/.env", "{projectRoot}/.env.local"],
+    "source": ["{projectRoot}/**/*"],
+    "default": ["source", "sharedGlobals", "configs"],
+    "production": [
+      "default",
+      "!{projectRoot}/**/*.spec.ts",
+      "!{projectRoot}/**/*.md",
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/jest.config.ts",
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+      "!{projectRoot}/jest.config.[jt]s",
+      "!{projectRoot}/src/test-setup.[jt]s"
+    ]
+  },
+  "nxCloudId": "",
+  "targetDefaults": {
+    "build": {
+      "inputs": [
+        "production",
+        "^production",
+        {
+          "env": "VERCEL_ENV"
+        },
+        {
+          "env": "NODE_ENV"
+        }
+      ],
+      "dependsOn": ["^build"],
+      "cache": true
+    },
+    "lint": {
+      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
+      "cache": true
+    },
+    "e2e": {
+      "inputs": ["default", "^production"],
+      "cache": true
+    },
+    "next-build": {
+      "cache": true
+    },
+    "e2e-ci": {
+      "cache": true
+    },
+    "e2e-ci-pw": {
+      "cache": true
+    },
+    "codegen": {
+      "cache": true
+    },
+    "@nx/vite:test": {
+      "inputs": ["default", "^production"],
+      "cache": true
+    },
+    "@nx/jest:jest": {
+      "inputs": ["default", "^production"],
+      "cache": true,
+      "options": {
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "generators": {
+    "@nx/web:application": {
+      "style": "css",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nx/web:library": {
+      "style": "css",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nx/react": {
+      "application": {
+        "style": "none",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "none"
+      },
+      "library": {
+        "style": "none",
+        "linter": "eslint"
+      }
+    },
+    "@nx/next": {
+      "application": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
+  },
+  "defaultProject": "dashboard",
+  "plugins": [
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "eslint:lint"
+      }
+    }
+  ],
+  "defaultBase": "main"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "marketing-cms",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/marketing-cms",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "sanity build",
+        "cwd": "apps/marketing-cms"
+      }
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "sanity dev",
+        "cwd": "apps/marketing-cms"
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "sanity deploy",
+        "cwd": "apps/marketing-cms"
+      }
+    }
+  }
+}

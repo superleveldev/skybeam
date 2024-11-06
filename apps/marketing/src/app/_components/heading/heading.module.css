@@ -1,0 +1,244 @@
+.headingContainer {
+  color: white;
+  background: linear-gradient(
+    28deg,
+    #0a0a0a 62.6%,
+    #00152a 75.79%,
+    #0056ed 100.39%
+  );
+  overflow: hidden;
+}
+
+.headingTitle {
+  font-size: 100px;
+  line-height: 90%;
+  letter-spacing: -2px;
+}
+
+.headingSubtitle {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.digitalCampaignsContainer {
+  background-color: #0067ff;
+  z-index: 1;
+  height: 1052px;
+}
+
+.digitalCampaignsTitle {
+  padding: 0 32px;
+}
+
+.digitalCampaignsSubtitle {
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 592px;
+}
+
+.headingImagesContainer {
+  height: 700px;
+  width: 100%;
+}
+
+.newCampaignImage {
+  max-width: 1138px;
+  width: 1138px;
+}
+
+.returnAdSendImage {
+  box-shadow: 0px 32px 64px -12px rgba(64, 56, 0, 0.15);
+}
+
+.firstCampaignImage {
+  box-shadow: 0px 32px 64px -12px rgba(64, 56, 0, 0.15);
+}
+
+@media (max-width: 1439px) {
+  .heroContainer {
+    padding: 176px 56px 733px;
+  }
+
+  .heroContent {
+    align-items: center;
+    max-width: 880px;
+  }
+
+  .heroContent > div {
+    padding: 0;
+    align-items: center;
+  }
+
+  .heroContent button {
+    margin: 0;
+  }
+
+  .headingTitle {
+    padding: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .headingSubtitle {
+    text-align: center;
+    max-width: 778px;
+  }
+
+  .digitalCampaignsContainer {
+    padding: 96px 0 0;
+    height: 851px;
+  }
+
+  .digitalCampaignsContent {
+    max-width: 880px;
+    row-gap: 58px;
+  }
+
+  .digitalCampaignsTitle {
+    padding: 0;
+  }
+
+  .digitalCampaignsSubtitle {
+    max-width: 778px;
+  }
+
+  .headingImagesContainer {
+    height: 458px;
+  }
+
+  .newCampaignImage {
+    width: 806px;
+  }
+
+  .returnAdSendImage {
+    top: -58px;
+    right: 0;
+    width: 173px;
+    height: 144px;
+    box-shadow: 0px 32px 64px -12px rgba(64, 56, 0, 0.15);
+  }
+
+  .firstCampaignImage {
+    bottom: 49px;
+    left: 0;
+    width: 398px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 959px) {
+  .heroContainer {
+    padding: 166px 24px 613px;
+    align-items: center;
+  }
+
+  .heroContent {
+    max-width: 520px;
+  }
+
+  .headingTitle {
+    font-size: 70px;
+    letter-spacing: -1.4px;
+  }
+
+  .headingSubtitle {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .digitalCampaignsContainer {
+    padding: 64px 0 0;
+    height: 655px;
+  }
+
+  .digitalCampaignsContent {
+    max-width: 520px;
+    row-gap: 83px;
+    align-items: center;
+  }
+
+  .digitalCampaignsContent > div {
+    row-gap: 24px;
+  }
+
+  .digitalCampaignsSubtitle {
+    max-width: 100%;
+  }
+
+  .headingImagesContainer {
+    height: 305px;
+    width: 472px;
+  }
+
+  .newCampaignImage {
+    width: 472px;
+  }
+
+  .returnAdSendImage {
+    top: -28px;
+    right: -24px;
+    width: 118px;
+    height: 98px;
+  }
+
+  .firstCampaignImage {
+    bottom: 21px;
+    left: -24px;
+    width: 251px;
+    height: 132px;
+  }
+}
+
+@media (max-width: 567px) {
+  .heroContainer {
+    padding: 92px 24px 450px;
+  }
+
+  .headingTitle {
+    font-size: 46px;
+    letter-spacing: -0.92px;
+  }
+
+  .headingSubtitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .digitalCampaignsContainer {
+    height: 800px;
+    padding: 64px 24px 0;
+  }
+
+  .digitalCampaignsContent {
+    row-gap: 78px;
+    max-width: 100%;
+  }
+
+  .digitalCampaignsSubtitle {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .headingImagesContainer {
+    height: 321px;
+  }
+
+  .newCampaignImage {
+    width: 558px;
+  }
+
+  .returnAdSendImage {
+    top: -58px;
+    left: 90px;
+    width: 118px;
+    height: 98px;
+  }
+
+  .firstCampaignImage {
+    left: unset;
+    right: 90px;
+    bottom: -78px;
+    width: 251px;
+    height: 132px;
+  }
+}

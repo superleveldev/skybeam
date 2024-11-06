@@ -1,0 +1,17 @@
+{
+  "plugins": ["import"],
+  "extends": [
+    "plugin:cypress/recommended"
+  ],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "cypress/no-unnecessary-waiting": "warn",
+        "cypress/unsafe-to-chain-command": "warn",
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
+}

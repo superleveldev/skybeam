@@ -1,0 +1,96 @@
+.title {
+  font-size: 100px;
+  line-height: 90%;
+  font-weight: 300;
+  letter-spacing: -1px;
+  color: white;
+}
+
+.subtitle,
+.textContent {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.textContent {
+  color: #475467;
+}
+
+.termsTitle {
+  font-size: 36px;
+  line-height: 28px;
+}
+
+.termsSubtitle {
+  font-weight: 700;
+}
+
+@media (max-width: 1439px) {
+  .headerContainer {
+    padding: 260px 40px 84px;
+  }
+
+  .textContainer {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 959px) {
+  .headerContainer {
+    padding: 196px 40px 48px 24px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .textContainer {
+    padding: 32px 26px 32px 24px;
+  }
+
+  .textContent {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .termsTitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .termsSubtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 567px) {
+  .headerContainer {
+    padding: 156px 40px 32px 24px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle,
+  .textContent,
+  .termsSubtitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .textContainer {
+    padding: 32px 16px;
+  }
+
+  .termsTitle {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}

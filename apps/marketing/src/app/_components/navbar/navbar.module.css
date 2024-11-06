@@ -1,0 +1,173 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  color: white;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.navbar.transparent {
+  background-color: transparent !important;
+}
+
+.navbarMobile {
+  display: none;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 22px 56px 16px;
+}
+
+.navbarMobile .link {
+  padding: 0px 16px;
+}
+
+.navbarMobile .link:hover {
+  border-radius: 100px;
+  background-color: rgba(205, 223, 253, 0.2);
+}
+
+.navbarMobile .navLink {
+  padding: 11px 0;
+}
+
+.navbarMobile .navLink:not(:first-child) {
+  border-top: 1px solid #24324c;
+}
+
+.navbarMobile.light .navLink:not(:first-child),
+.navbarMobile.white .navLink:not(:first-child) {
+  border-color: #e3e8ef;
+}
+
+.navbarMobile.white .navLink:not(:first-child) {
+  border-color: #cddffd;
+}
+
+.navbarMobile.dark {
+  background-color: #00152a;
+  color: white;
+}
+
+.navbarMobile.light {
+  background-color: #fbfbf7;
+  color: #013d3a;
+}
+
+.navbarMobile.white {
+  background-color: #f4f6ff;
+  color: #0a0a0a;
+}
+
+.navbarMobile.light .closeButton,
+.navbarMobile.white .closeButton {
+  color: #00152a;
+}
+
+.navbarMobile.dark .mobileLogo path {
+  fill: white;
+}
+
+.navbar.dark {
+  background-color: #0a0a0a;
+}
+
+.navbar.white {
+  background-color: #f4f6ff;
+  color: #0a0a0a;
+  border-color: #cddffd;
+}
+
+.navbar.light {
+  background-color: #0067ff;
+}
+
+.navbar.dark path,
+.navbar.light path {
+  fill: white;
+}
+
+.navbar .navLink {
+  padding: 4px 16px;
+}
+
+.navbar .navLink:hover {
+  border-radius: 100px;
+  background-color: rgba(205, 223, 253, 0.2);
+}
+
+.navLink.isActive {
+  background-color: #cddffd !important;
+  padding: 4px 16px;
+  border-radius: 100px;
+  color: #0a0a0a;
+}
+
+.navMenu {
+  display: none;
+}
+
+@media (max-width: 1439px) {
+  .navbar {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  .navMenu {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 6px;
+  }
+
+  .navbar.white .navMenu path {
+    stroke: #0a0a0a;
+  }
+
+  .closeButton {
+    padding: 6px;
+    width: 36px;
+    height: 36px;
+    color: white;
+  }
+
+  .navbarContent {
+    align-items: center;
+    column-gap: 16px;
+  }
+}
+
+@media (max-width: 959px) {
+  .navbar {
+    padding: 22px 24px;
+    height: 80px;
+  }
+
+  .navbarMobile {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .navMenu path {
+    stroke: white;
+  }
+}
+
+@media (max-width: 567px) {
+  .navbar {
+    padding: 8px 16px;
+    height: 52px;
+  }
+
+  .navbarMobile {
+    padding: 8px 16px 16px;
+  }
+
+  .mobileLogo {
+    width: 99px;
+  }
+
+  .navMenu {
+    width: 36px;
+  }
+}

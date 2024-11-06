@@ -1,0 +1,97 @@
+{
+  "name": "dashboard",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/dashboard/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/dashboard"
+      },
+      "configurations": {
+        "production": {},
+        "development": {
+          "outputPath": "apps/dashboard"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "options": {
+        "port": 3001
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "dashboard:build:development",
+          "dev": true,
+          "turbo": false,
+          "quiet": true
+        },
+        "production": {
+          "buildTarget": "dashboard:build:production",
+          "dev": false
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "serve-ci": {
+      "executor": "@nx/next:server",
+      "options": {
+        "dev": false,
+        "buildTarget": "dashboard:build:production",
+        "port": 3001
+      }
+    },
+    "start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx nx serve-ci dashboard",
+        "readyWhen": "ready"
+      },
+      "dependsOn": ["build"]
+    },
+    "next-start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "dist/apps/dashboard",
+        "command": "npx next start -p 3002",
+        "readyWhen": "ready"
+      }
+    },
+    "inngest": {
+      "executor": "nx:run-script",
+      "options": {
+        "script": "inngest"
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "dashboard:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{workspaceRoot}/coverage/apps/dashboard"],
+      "options": {
+        "config": "apps/dashboard/vite.config.ts"
+      },
+      "configurations": {
+        "watch": {
+          "watch": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/dashboard/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

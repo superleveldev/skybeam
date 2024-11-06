@@ -1,0 +1,24 @@
+{
+  "data": [
+    { "name": "College Students", "audience": 2701520 },
+    { "name": "Affluent Young Adults", "audience": 8393680 },
+    { "name": "Suburban Home Owners With Children", "audience": 8096256 },
+    { "name": "Growing Small Businesses", "audience": 21146905 },
+    { "name": "Organic Beauty Product Buyers", "audience": 31373463 },
+    { "name": "Pet Owners", "audience": 77395732 },
+    { "name": "Car Buyers", "audience": 89925751 },
+    { "name": "Fast Food Regulars", "audience": 135218035 },
+    { "name": "Primetime Sports Viewers", "audience": 25507936 },
+    { "name": "Foodies", "audience": 92466084 },
+    { "name": "Fitness Enthusiasts", "audience": 132731035 },
+    { "name": "Home Renovation Planners", "audience": 47948587 },
+    { "name": "Cross-Border Air Travelers", "audience": 83701233 },
+    { "name": "Recent Sneaker Buyers", "audience": 116232053 },
+    { "name": "Live Event Enthusiasts", "audience": 62816905 },
+    { "name": "Health Supplement Shoppers", "audience": 72613122 },
+    { "name": "Food Trend Tryers", "audience": 102046917 },
+    { "name": "Healthcare Guidance-Oriented Consumers", "audience": 91212656 },
+    { "name": "Active Banking Product Users", "audience": 121824819 },
+    { "name": "Locally Grown Food Buyers", "audience": 51879892 }
+  ]
+}

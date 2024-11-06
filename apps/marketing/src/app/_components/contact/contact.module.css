@@ -1,0 +1,47 @@
+.contactTitle {
+  color: #fefefd;
+  font-size: 80px;
+  line-height: 95%;
+  letter-spacing: -1.6px;
+  text-align: center;
+}
+
+.contactSubtitle {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+@media (max-width: 1439px) {
+  .contactContainer {
+    padding: 96px 40px;
+  }
+
+  .contactContent {
+    max-width: 880px;
+  }
+}
+
+@media (max-width: 959px) {
+  .contactContent {
+    padding: 64px 30px;
+    max-width: 572px;
+  }
+
+  .contactTitle {
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+  }
+}
+
+@media (max-width: 567px) {
+  .contactContainer {
+    padding: 48px 16px;
+  }
+
+  .contactContent {
+    padding: 64px 16px;
+  }
+}

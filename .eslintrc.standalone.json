@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "./.eslintrc.typescript.json"
+  ],
+  "plugins": ["import"]
+}

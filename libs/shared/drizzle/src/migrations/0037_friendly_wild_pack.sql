@@ -1,0 +1,2 @@
+ALTER TABLE "targeting_groups" ALTER COLUMN "budget" SET DATA TYPE double precision;--> statement-breakpoint
+ALTER TABLE "targeting_groups" ADD COLUMN "budget_type" "budget_type" DEFAULT 'daily' NOT NULL;

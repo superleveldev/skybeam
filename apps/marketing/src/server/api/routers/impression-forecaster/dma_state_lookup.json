@@ -1,0 +1,860 @@
+{
+  "meta": [
+    {
+      "name": "dma_name",
+      "type": "String"
+    },
+    {
+      "name": "state",
+      "type": "String"
+    }
+  ],
+  "data": [
+    {
+      "dma_name": "Abilene-Sweetwater",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Albany, GA",
+      "state": "GA"
+    },
+    {
+      "dma_name": "Albany-Schenectady-Troy",
+      "state": "NY"
+    },
+    {
+      "dma_name": "Albuquerque-Santa Fe",
+      "state": "NM"
+    },
+    {
+      "dma_name": "Alexandria, LA",
+      "state": "LA"
+    },
+    {
+      "dma_name": "Alpena",
+      "state": "MI"
+    },
+    {
+      "dma_name": "Amarillo",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Anchorage",
+      "state": "AK"
+    },
+    {
+      "dma_name": "Atlanta",
+      "state": "GA"
+    },
+    {
+      "dma_name": "Augusta-Aiken",
+      "state": "GA"
+    },
+    {
+      "dma_name": "Austin",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Bakersfield",
+      "state": "CA"
+    },
+    {
+      "dma_name": "Baltimore",
+      "state": "MD"
+    },
+    {
+      "dma_name": "Bangor",
+      "state": "ME"
+    },
+    {
+      "dma_name": "Baton Rouge",
+      "state": "LA"
+    },
+    {
+      "dma_name": "Beaumont-Port Arthur",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Bend, OR",
+      "state": "OR"
+    },
+    {
+      "dma_name": "Billings",
+      "state": "MT"
+    },
+    {
+      "dma_name": "Biloxi-Gulfport",
+      "state": "MS"
+    },
+    {
+      "dma_name": "Binghamton",
+      "state": "NY"
+    },
+    {
+      "dma_name": "Birmingham (Ann and Tusc)",
+      "state": "AL"
+    },
+    {
+      "dma_name": "Bismarck-Mnt-Dcknsn(Wlstn)",
+      "state": "ND"
+    },
+    {
+      "dma_name": "Bluefield-Beckley-Oak Hill",
+      "state": "WV"
+    },
+    {
+      "dma_name": "Boise",
+      "state": "ID"
+    },
+    {
+      "dma_name": "Boston (Manchester)",
+      "state": "MA"
+    },
+    {
+      "dma_name": "Bowling Green",
+      "state": "KY"
+    },
+    {
+      "dma_name": "Buffalo",
+      "state": "NY"
+    },
+    {
+      "dma_name": "Burlington-Plattsburgh",
+      "state": "VT"
+    },
+    {
+      "dma_name": "Butte-Bozeman",
+      "state": "MT"
+    },
+    {
+      "dma_name": "Casper-Riverton",
+      "state": "WY"
+    },
+    {
+      "dma_name": "Cedar Rapids-Wtrlo-IWC&Dub",
+      "state": "IA"
+    },
+    {
+      "dma_name": "Champaign&Sprngfld-Decatur",
+      "state": "IL"
+    },
+    {
+      "dma_name": "Charleston, SC",
+      "state": "SC"
+    },
+    {
+      "dma_name": "Charleston-Huntington",
+      "state": "WV"
+    },
+    {
+      "dma_name": "Charlotte",
+      "state": "NC"
+    },
+    {
+      "dma_name": "Charlottesville",
+      "state": "VA"
+    },
+    {
+      "dma_name": "Chattanooga",
+      "state": "TN"
+    },
+    {
+      "dma_name": "Cheyenne-Scottsbluff",
+      "state": "WY"
+    },
+    {
+      "dma_name": "Chicago",
+      "state": "IL"
+    },
+    {
+      "dma_name": "Chico-Redding",
+      "state": "CA"
+    },
+    {
+      "dma_name": "Cincinnati",
+      "state": "OH"
+    },
+    {
+      "dma_name": "Clarksburg-Weston",
+      "state": "WV"
+    },
+    {
+      "dma_name": "Cleveland-Akron (Canton)",
+      "state": "OH"
+    },
+    {
+      "dma_name": "Colorado Springs-Pueblo",
+      "state": "CO"
+    },
+    {
+      "dma_name": "Columbia, SC",
+      "state": "SC"
+    },
+    {
+      "dma_name": "Columbia-Jefferson City",
+      "state": "MO"
+    },
+    {
+      "dma_name": "Columbus, GA (Opelika, AL)",
+      "state": "GA"
+    },
+    {
+      "dma_name": "Columbus, OH",
+      "state": "OH"
+    },
+    {
+      "dma_name": "Columbus-Tupelo-West Point",
+      "state": "MS"
+    },
+    {
+      "dma_name": "Corpus Christi",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Dallas-Ft. Worth",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Davenport-R.Island-Moline",
+      "state": "IL"
+    },
+    {
+      "dma_name": "Dayton",
+      "state": "OH"
+    },
+    {
+      "dma_name": "Denver",
+      "state": "CO"
+    },
+    {
+      "dma_name": "Des Moines-Ames",
+      "state": "IA"
+    },
+    {
+      "dma_name": "Detroit",
+      "state": "MI"
+    },
+    {
+      "dma_name": "Dothan",
+      "state": "AL"
+    },
+    {
+      "dma_name": "Duluth-Superior",
+      "state": "MN"
+    },
+    {
+      "dma_name": "El Paso (Las Cruces)",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Elmira (Corning)",
+      "state": "NY"
+    },
+    {
+      "dma_name": "Erie",
+      "state": "PA"
+    },
+    {
+      "dma_name": "Eugene",
+      "state": "OR"
+    },
+    {
+      "dma_name": "Eureka",
+      "state": "CA"
+    },
+    {
+      "dma_name": "Evansville",
+      "state": "IN"
+    },
+    {
+      "dma_name": "Fairbanks",
+      "state": "AK"
+    },
+    {
+      "dma_name": "Fargo",
+      "state": "ND"
+    },
+    {
+      "dma_name": "Flint-Saginaw-Bay City",
+      "state": "MI"
+    },
+    {
+      "dma_name": "Fresno-Visalia",
+      "state": "CA"
+    },
+    {
+      "dma_name": "Ft. Myers-Naples",
+      "state": "FL"
+    },
+    {
+      "dma_name": "Ft. Smith-Fay-Sprngdl-Rgrs",
+      "state": "AR"
+    },
+    {
+      "dma_name": "Ft. Wayne",
+      "state": "IN"
+    },
+    {
+      "dma_name": "Gainesville",
+      "state": "FL"
+    },
+    {
+      "dma_name": "Glendive",
+      "state": "MT"
+    },
+    {
+      "dma_name": "Grand Junction-Montrose",
+      "state": "CO"
+    },
+    {
+      "dma_name": "Grand Rapids-Kalmzoo-B.Crk",
+      "state": "MI"
+    },
+    {
+      "dma_name": "Great Falls",
+      "state": "MT"
+    },
+    {
+      "dma_name": "Green Bay-Appleton",
+      "state": "WI"
+    },
+    {
+      "dma_name": "Greensboro-H.Point-W.Salem",
+      "state": "NC"
+    },
+    {
+      "dma_name": "Greenville-N.Bern-Washngtn",
+      "state": "NC"
+    },
+    {
+      "dma_name": "Greenvll-Spart-Ashevll-And",
+      "state": "SC"
+    },
+    {
+      "dma_name": "Greenwood-Greenville",
+      "state": "MS"
+    },
+    {
+      "dma_name": "Harlingen-Wslco-Brnsvl-Mca",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Harrisburg-Lncstr-Leb-York",
+      "state": "PA"
+    },
+    {
+      "dma_name": "Harrisonburg",
+      "state": "VA"
+    },
+    {
+      "dma_name": "Hartford & New Haven",
+      "state": "CT"
+    },
+    {
+      "dma_name": "Hattiesburg-Laurel",
+      "state": "MS"
+    },
+    {
+      "dma_name": "Helena",
+      "state": "MT"
+    },
+    {
+      "dma_name": "Honolulu",
+      "state": "HI"
+    },
+    {
+      "dma_name": "Houston",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Huntsville-Decatur (Flor)",
+      "state": "AL"
+    },
+    {
+      "dma_name": "Idaho Fals-Pocatllo(Jcksn)",
+      "state": "ID"
+    },
+    {
+      "dma_name": "Indianapolis",
+      "state": "IN"
+    },
+    {
+      "dma_name": "Jackson, MS",
+      "state": "MS"
+    },
+    {
+      "dma_name": "Jackson, TN",
+      "state": "TN"
+    },
+    {
+      "dma_name": "Jacksonville",
+      "state": "FL"
+    },
+    {
+      "dma_name": "Johnstown-Altoona-St Colge",
+      "state": "PA"
+    },
+    {
+      "dma_name": "Jonesboro",
+      "state": "AR"
+    },
+    {
+      "dma_name": "Joplin-Pittsburg",
+      "state": "KS"
+    },
+    {
+      "dma_name": "Juneau",
+      "state": "AK"
+    },
+    {
+      "dma_name": "Kansas City",
+      "state": "MO"
+    },
+    {
+      "dma_name": "Knoxville",
+      "state": "TN"
+    },
+    {
+      "dma_name": "La Crosse-Eau Claire",
+      "state": "WI"
+    },
+    {
+      "dma_name": "Lafayette, IN",
+      "state": "IN"
+    },
+    {
+      "dma_name": "Lafayette, LA",
+      "state": "LA"
+    },
+    {
+      "dma_name": "Lake Charles",
+      "state": "LA"
+    },
+    {
+      "dma_name": "Lansing",
+      "state": "MI"
+    },
+    {
+      "dma_name": "Laredo",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Las Vegas",
+      "state": "NV"
+    },
+    {
+      "dma_name": "Lexington",
+      "state": "KY"
+    },
+    {
+      "dma_name": "Lima",
+      "state": "OH"
+    },
+    {
+      "dma_name": "Lincoln & Hastings-Krny",
+      "state": "NE"
+    },
+    {
+      "dma_name": "Little Rock-Pine Bluff",
+      "state": "AR"
+    },
+    {
+      "dma_name": "Los Angeles",
+      "state": "CA"
+    },
+    {
+      "dma_name": "Louisville",
+      "state": "KY"
+    },
+    {
+      "dma_name": "Lubbock",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Macon",
+      "state": "GA"
+    },
+    {
+      "dma_name": "Madison",
+      "state": "WI"
+    },
+    {
+      "dma_name": "Mankato",
+      "state": "MN"
+    },
+    {
+      "dma_name": "Marquette",
+      "state": "MI"
+    },
+    {
+      "dma_name": "Medford-Klamath Falls",
+      "state": "OR"
+    },
+    {
+      "dma_name": "Memphis",
+      "state": "TN"
+    },
+    {
+      "dma_name": "Meridian",
+      "state": "MS"
+    },
+    {
+      "dma_name": "Miami-Ft. Lauderdale",
+      "state": "FL"
+    },
+    {
+      "dma_name": "Milwaukee",
+      "state": "WI"
+    },
+    {
+      "dma_name": "Minneapolis-St. Paul",
+      "state": "MN"
+    },
+    {
+      "dma_name": "Missoula",
+      "state": "MT"
+    },
+    {
+      "dma_name": "Mobile-Pensacola (Ft Walt)",
+      "state": "AL"
+    },
+    {
+      "dma_name": "Monroe-El Dorado",
+      "state": "LA"
+    },
+    {
+      "dma_name": "Monterey-Salinas",
+      "state": "CA"
+    },
+    {
+      "dma_name": "Montgomery-Selma",
+      "state": "AL"
+    },
+    {
+      "dma_name": "Myrtle Beach-Florence",
+      "state": "SC"
+    },
+    {
+      "dma_name": "Nashville",
+      "state": "TN"
+    },
+    {
+      "dma_name": "New Orleans",
+      "state": "LA"
+    },
+    {
+      "dma_name": "New York",
+      "state": "NY"
+    },
+    {
+      "dma_name": "Norfolk-Portsmth-Newpt Nws",
+      "state": "VA"
+    },
+    {
+      "dma_name": "North Platte",
+      "state": "NE"
+    },
+    {
+      "dma_name": "Odessa-Midland",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Oklahoma City",
+      "state": "OK"
+    },
+    {
+      "dma_name": "Omaha",
+      "state": "NE"
+    },
+    {
+      "dma_name": "Orlando-Daytona Bch-Melbrn",
+      "state": "FL"
+    },
+    {
+      "dma_name": "Ottumwa-Kirksville",
+      "state": "MO"
+    },
+    {
+      "dma_name": "Paducah-Cape Girard-Harsbg",
+      "state": "IL"
+    },
+    {
+      "dma_name": "Palm Springs",
+      "state": "CA"
+    },
+    {
+      "dma_name": "Panama City",
+      "state": "FL"
+    },
+    {
+      "dma_name": "Parkersburg",
+      "state": "OH"
+    },
+    {
+      "dma_name": "Peoria-Bloomington",
+      "state": "IL"
+    },
+    {
+      "dma_name": "Philadelphia",
+      "state": "PA"
+    },
+    {
+      "dma_name": "Phoenix (Prescott)",
+      "state": "AZ"
+    },
+    {
+      "dma_name": "Pittsburgh",
+      "state": "PA"
+    },
+    {
+      "dma_name": "Portland, OR",
+      "state": "OR"
+    },
+    {
+      "dma_name": "Portland-Auburn",
+      "state": "ME"
+    },
+    {
+      "dma_name": "Presque Isle",
+      "state": "ME"
+    },
+    {
+      "dma_name": "Providence-New Bedford",
+      "state": "RI"
+    },
+    {
+      "dma_name": "Quincy-Hannibal-Keokuk",
+      "state": "IL"
+    },
+    {
+      "dma_name": "Raleigh-Durham (Fayetvlle)",
+      "state": "NC"
+    },
+    {
+      "dma_name": "Rapid City",
+      "state": "SD"
+    },
+    {
+      "dma_name": "Reno",
+      "state": "NV"
+    },
+    {
+      "dma_name": "Richmond-Petersburg",
+      "state": "VA"
+    },
+    {
+      "dma_name": "Roanoke-Lynchburg",
+      "state": "VA"
+    },
+    {
+      "dma_name": "Rochester, NY",
+      "state": "NY"
+    },
+    {
+      "dma_name": "Rochestr-Mason City-Austin",
+      "state": "MN"
+    },
+    {
+      "dma_name": "Rockford",
+      "state": "IL"
+    },
+    {
+      "dma_name": "Sacramnto-Stkton-Modesto",
+      "state": "CA"
+    },
+    {
+      "dma_name": "Salisbury",
+      "state": "MD"
+    },
+    {
+      "dma_name": "Salt Lake City",
+      "state": "UT"
+    },
+    {
+      "dma_name": "San Angelo",
+      "state": "TX"
+    },
+    {
+      "dma_name": "San Antonio",
+      "state": "TX"
+    },
+    {
+      "dma_name": "San Diego",
+      "state": "CA"
+    },
+    {
+      "dma_name": "San Francisco-Oak-San Jose",
+      "state": "CA"
+    },
+    {
+      "dma_name": "Santabarbra-Sanmar-Sanluob",
+      "state": "CA"
+    },
+    {
+      "dma_name": "Savannah",
+      "state": "GA"
+    },
+    {
+      "dma_name": "Seattle-Tacoma",
+      "state": "WA"
+    },
+    {
+      "dma_name": "Sherman-Ada",
+      "state": "OK"
+    },
+    {
+      "dma_name": "Shreveport",
+      "state": "LA"
+    },
+    {
+      "dma_name": "Sioux City",
+      "state": "IA"
+    },
+    {
+      "dma_name": "Sioux Falls(Mitchell)",
+      "state": "SD"
+    },
+    {
+      "dma_name": "South Bend-Elkhart",
+      "state": "IN"
+    },
+    {
+      "dma_name": "Spokane",
+      "state": "WA"
+    },
+    {
+      "dma_name": "Springfield, MO",
+      "state": "MO"
+    },
+    {
+      "dma_name": "Springfield-Holyoke",
+      "state": "MA"
+    },
+    {
+      "dma_name": "St. Joseph",
+      "state": "MO"
+    },
+    {
+      "dma_name": "St. Louis",
+      "state": "IL"
+    },
+    {
+      "dma_name": "Syracuse",
+      "state": "NY"
+    },
+    {
+      "dma_name": "Tallahassee-Thomasville",
+      "state": "GA"
+    },
+    {
+      "dma_name": "Tampa-St. Pete (Sarasota)",
+      "state": "FL"
+    },
+    {
+      "dma_name": "Terre Haute",
+      "state": "IN"
+    },
+    {
+      "dma_name": "Toledo",
+      "state": "OH"
+    },
+    {
+      "dma_name": "Topeka",
+      "state": "KS"
+    },
+    {
+      "dma_name": "Traverse City-Cadillac",
+      "state": "MI"
+    },
+    {
+      "dma_name": "Tri-Cities, TN-VA",
+      "state": "VA"
+    },
+    {
+      "dma_name": "Tucson (Sierra Vista)",
+      "state": "AZ"
+    },
+    {
+      "dma_name": "Tulsa",
+      "state": "OK"
+    },
+    {
+      "dma_name": "Twin Falls",
+      "state": "ID"
+    },
+    {
+      "dma_name": "Tyler-Longview(Lfkn&Ncgd)",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Utica",
+      "state": "NY"
+    },
+    {
+      "dma_name": "Victoria",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Waco-Temple-Bryan",
+      "state": "TX"
+    },
+    {
+      "dma_name": "Washington, DC (Hagrstwn)",
+      "state": "MD"
+    },
+    {
+      "dma_name": "Watertown",
+      "state": "NY"
+    },
+    {
+      "dma_name": "Wausau-Rhinelander",
+      "state": "WI"
+    },
+    {
+      "dma_name": "West Palm Beach-Ft. Pierce",
+      "state": "FL"
+    },
+    {
+      "dma_name": "Wheeling-Steubenville",
+      "state": "OH"
+    },
+    {
+      "dma_name": "Wichita Falls & Lawton",
+      "state": "OK"
+    },
+    {
+      "dma_name": "Wichita-Hutchinson Plus",
+      "state": "KS"
+    },
+    {
+      "dma_name": "Wilkes Barre-Scranton-Hztn",
+      "state": "PA"
+    },
+    {
+      "dma_name": "Wilmington",
+      "state": "NC"
+    },
+    {
+      "dma_name": "Yakima-Pasco-Rchlnd-Knnwck",
+      "state": "WA"
+    },
+    {
+      "dma_name": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "dma_name": "Yuma-El Centro",
+      "state": "CA"
+    },
+    {
+      "dma_name": "Zanesville",
+      "state": "OH"
+    }
+  ],
+  "rows": 210,
+  "statistics": {
+    "elapsed": 0.012737088,
+    "rows_read": 44376,
+    "bytes_read": 2191667
+  }
+}

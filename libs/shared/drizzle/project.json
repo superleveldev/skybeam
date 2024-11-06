@@ -1,0 +1,41 @@
+{
+  "name": "shared-drizzle",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/drizzle/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "studio": {
+      "executor": "nx:run-script",
+      "outputs": ["{projectRoot}/src/drizzle"],
+      "options": {
+        "cwd": "libs/shared/drizzle",
+        "script": "drizzle-kit:studio"
+      }
+    },
+    "push": {
+      "executor": "nx:run-script",
+      "outputs": ["{projectRoot}/src/drizzle"],
+      "options": {
+        "cwd": "libs/shared/drizzle",
+        "script": "drizzle-kit:push:postgres"
+      }
+    },
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared/drizzle",
+        "main": "libs/shared/drizzle/src/index.ts",
+        "tsConfig": "libs/shared/drizzle/tsconfig.lib.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/drizzle/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

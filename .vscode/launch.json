@@ -1,0 +1,48 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "dashboard - Server",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "C:\\Users\\pc\\AppData\\Roaming\\nvm\\v18.20.2\\pnpm",
+        "runtimeArgs": [
+          "nx",
+          "run",
+          "--verbose",
+          "dashboard:serve",
+          "-r",
+          "ts-node/register",
+          "-r",
+          "tsconfig-paths/register"
+        ],
+        "outputCapture": "std",
+        "internalConsoleOptions": "openOnSessionStart",
+        "console": "internalConsole",
+        "env": {
+          "TS_NODE_IGNORE": "false",
+          "TS_NODE_PROJECT": "${workspaceFolder}/apps/dashboard/tsconfig.json"
+        },
+        "cwd": "${workspaceFolder}",
+        "resolveSourceMapLocations": [
+          "${workspaceFolder}/**",
+          "!**/node_modules/**",
+          "!**/vendor/**"
+        ],
+        "outFiles": [
+            "${workspaceFolder}/.next/**/*.js",
+            "${workspaceFolder}/dist/apps/dashboard/.next/**/*.js",
+            "${workspaceFolder}/.nx/cache/**/outputs/dist/apps/dashboard/.next/**/*.js"
+        ],
+        "sourceMapPathOverrides": {
+        "webpack://_N_E/src/*": "${workspaceFolder}/apps/dashboard/src/*",
+        "webpack://_N_E/*": "${workspaceFolder}/*",
+        "*": "${workspaceFolder}/*"
+        },
+        "skipFiles": [
+          "<node_internals>/**",
+          "**/node_modules/**"
+        ]
+      }
+    ]
+  }

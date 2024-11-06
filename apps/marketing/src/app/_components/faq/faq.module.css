@@ -1,0 +1,107 @@
+.faqTextContainer {
+  row-gap: 20px;
+}
+
+.faqTitle {
+  color: white;
+  font-size: 80px;
+  line-height: 95%;
+  letter-spacing: -1.6px;
+  font-weight: 300;
+}
+
+.faqSubtitle {
+  color: #eaecf0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.faqAccordionContainer {
+  padding-bottom: 46px;
+}
+
+.faqAccordionTitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-right: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faqAccordionContent {
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 48px;
+
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.faqAccordionContent.open {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.faqAccordionIcon {
+  color: #98a2b3;
+}
+
+.faqAccordionIcon:hover {
+  color: #e6e4d7;
+  cursor: pointer;
+}
+
+@media (max-width: 1439px) {
+  .faqContainer {
+    padding: 96px 40px;
+  }
+
+  .faqContent {
+    flex-direction: column;
+    row-gap: 64px;
+    max-width: 880px;
+  }
+
+  .faqContent > div {
+    width: 100%;
+  }
+
+  .faqAccordionContainer {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 959px) {
+  .faqContent {
+    max-width: 572px;
+  }
+}
+
+@media (max-width: 567px) {
+  .faqContainer {
+    padding: 76px 16px 40px;
+  }
+
+  .faqTitle {
+    font-size: 32px;
+    letter-spacing: -0.32px;
+  }
+
+  .faqSubtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .faqAccordionTitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .faqAccordionContent {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "dashboard-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/dashboard-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["dashboard"],
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "devServerTarget": "dashboard:serve:development",
+        "key": "d3b2a52f-d87f-4619-b0ba-d57be757e21c",
+        "browser": "chrome"
+      },
+      "configurations": {
+        "full": {
+          "cypressConfig": "apps/dashboard-e2e/cypress.config.ts"
+        }
+      },
+      "defaultConfiguration": "full"
+    },
+    "e2e-ci": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "devServerTarget": "dashboard:serve:production",
+        "key": "d3b2a52f-d87f-4619-b0ba-d57be757e21c",
+        "browser": "electron",
+        "parallel": true
+      },
+      "configurations": {
+        "full": {
+          "cypressConfig": "apps/dashboard-e2e/cypress.config.ts"
+        }
+      },
+      "defaultConfiguration": "full",
+      "dependsOn": ["^build"]
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/dashboard-e2e/**/*.{js,ts}"]
+      }
+    }
+  }
+}

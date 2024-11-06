@@ -1,0 +1,18 @@
+{
+  "name": "shared-sanity",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/sanity/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared/sanity",
+        "main": "libs/shared/sanity/src/index.ts",
+        "tsConfig": "libs/shared/sanity/tsconfig.lib.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "strict": false,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@limelight/shared-drizzle": ["libs/shared/drizzle/src/index.ts"],
+      "@limelight/shared-ui-kit": ["libs/shared/ui-kit/src/index.ts"],
+      "@limelight/shared-ui-kit/*": ["libs/shared/ui-kit/src/v1/*"],
+      "@limelight/shared-ui-kit/v1-config": [
+        "libs/shared/ui-kit/tailwind.config.v1.js"
+      ],
+      "@limelight/shared-inngest-events": [
+        "libs/shared/inngest-events/src/index.ts"
+      ],
+      "@limelight/shared-inngest-events/*": [
+        "libs/shared/inngest-events/src/*"
+      ],
+      "@limelight/shared-utils/*": ["libs/shared/utils/src/*"],
+      "@limelight/shared-sanity": ["libs/shared/sanity/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

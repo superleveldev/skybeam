@@ -1,0 +1,47 @@
+{
+  "name": "marketing-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/marketing-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["marketing"],
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "devServerTarget": "marketing:serve:development",
+        "key": "2efc3d44-610f-4eb8-a8d1-873106e0e32e",
+        "browser": "chrome"
+      },
+      "configurations": {
+        "full": {
+          "cypressConfig": "apps/marketing-e2e/cypress.config.ts"
+        }
+      },
+      "defaultConfiguration": "full"
+    },
+    "e2e-ci": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "devServerTarget": "marketing:serve:production",
+        "key": "2efc3d44-610f-4eb8-a8d1-873106e0e32e",
+        "browser": "electron",
+        "parallel": true
+      },
+      "configurations": {
+        "full": {
+          "cypressConfig": "apps/marketing-e2e/cypress.config.ts"
+        }
+      },
+      "defaultConfiguration": "full",
+      "dependsOn": ["^build"]
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/marketing-e2e/**/*.{js,ts}"]
+      }
+    }
+  }
+}
